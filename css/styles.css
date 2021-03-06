@@ -8,13 +8,14 @@
   --description-color: #757575;
   --secondary-background: #f5f4fa;
   --adress-color: rgba(255, 255, 255, 0.6);
+  --border-cards: #eeeeee;
+  --accent-padding-top: 94px;
+  --accent-padding-bottom: 94px;
 }
-
 body {
   font-family: var(--main-font);
   background-color: var(--background-color);
 }
-
 h1,
 h2,
 h3,
@@ -24,29 +25,23 @@ h6,
 p {
   margin: 0;
 }
-
 ul,
 ol {
   margin: 0;
   padding: 0;
 }
-
 img {
   display: block;
 }
-
 .link {
   text-decoration: none;
 }
-
 .list {
   list-style: none;
 }
-
 .address {
   font-style: normal;
 }
-
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -57,7 +52,6 @@ img {
   width: 1px !important;
   overflow: hidden;
 }
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -74,11 +68,12 @@ img {
   color: var(--accent-color);
 }
 .button {
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 /*END COMPONENTS*/
 
@@ -139,7 +134,6 @@ img {
 .mail-link {
   margin-right: 50px;
 }
-
 /*END SITE NAV*/
 
 /*HERO*/
@@ -161,15 +155,14 @@ img {
   margin-bottom: 30px;
 }
 .hero-btn {
+  font-weight: 700;
   background-color: var(--accent-color);
   color: var(--background-color);
-  border: none;
   box-shadow: 0px 4px 4px 0px #000000 0.15;
   height: 50px;
   width: 200px;
   left: 700px;
   top: 430px;
-  border-radius: 4px;
 }
 /*END HERO*/
 
@@ -177,7 +170,8 @@ img {
 .features {
   display: flex;
   align-items: center;
-  padding-top: 94px;
+  padding-top: var(--accent-padding-top);
+  padding-bottom: 47px;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -205,8 +199,8 @@ img {
 
 /*SERVICES*/
 .services {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 47px;
+  padding-bottom: var(--accent-padding-bottom);
 }
 .services-list {
   display: flex;
@@ -233,11 +227,10 @@ img {
 /*END SERVICES*/
 
 /*TEAM*/
-
 .team {
   background-color: var(--secondary-background);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 47px;
+  padding-bottom: var(--accent-padding-bottom);
 }
 .team-list {
   display: flex;
@@ -246,6 +239,7 @@ img {
   margin-top: -30px;
 }
 .title-team {
+  margin-top: 94px;
   margin-bottom: 50px;
 }
 .team-list-title {
@@ -267,14 +261,14 @@ img {
   padding-bottom: 30px;
   text-align: center;
   background-color: var(--background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 .team-list-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 /*END TEAM*/
 
@@ -292,7 +286,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--adress-color);
-  margin-top: 9px;
 }
 .footer-adress:hover,
 .footer-adress:focus {
@@ -304,27 +297,30 @@ img {
 .footer-contacts {
   margin-top: 20px;
 }
-
+.footer-contacts-list {
+  margin-bottom: 9px;
+}
 /*END FOOTER*/
 
 /*PORTFOLIO*/
+.portfolio {
+  padding-top: var(--accent-padding-top);
+  padding-bottom: var(--accent-padding-bottom);
+}
 .portfolio-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .modal-btn {
   font-weight: 500;
   color: var(--font-color);
-  border-radius: 4px;
   background-color: var(--secondary-background);
   height: 38px;
   width: 128px;
   left: 576px;
   top: 174px;
-  border: none;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -340,8 +336,6 @@ img {
   top: 174px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  border: none;
 }
 .projects-list-title {
   font-weight: 700;
@@ -372,5 +366,9 @@ img {
   margin-top: 30px;
 }
 .card {
+  padding: 20px 24px;
+  border-right: 1px solid var(--border-cards);
+  border-bottom: 1px solid var(--border-cards);
+  border-left: 1px solid var(--border-cards);
 }
 /*END PORTFOLIO*/
