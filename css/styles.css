@@ -156,8 +156,8 @@ img {
   letter-spacing: 0.06em;
   color: var(--background-color);
   text-transform: uppercase;
-  padding-right: 252px;
-  padding-left: 252px;
+  width: 696px;
+  margin: auto;
   margin-bottom: 30px;
 }
 .hero-btn {
