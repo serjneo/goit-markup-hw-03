@@ -131,9 +131,6 @@ img {
   color: var(--description-color);
   padding: 32px 0px;
 }
-.mail-link {
-  margin-right: 50px;
-}
 .icon {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -235,7 +232,7 @@ img {
 /*TEAM*/
 .team {
   background-color: var(--secondary-background);
-  padding-top: 141px;
+  padding-top: 94px;
   padding-bottom: var(--accent-padding-bottom);
 }
 .team-list {
