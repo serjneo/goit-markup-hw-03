@@ -114,6 +114,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--font-color);
   padding: 32px 0px;
+  display: block;
 }
 .head-item .link:hover,
 .head-item .link:focus {
@@ -130,6 +131,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--description-color);
   padding: 32px 0px;
+  display: flex;
 }
 .icon {
   padding-top: 24px;
